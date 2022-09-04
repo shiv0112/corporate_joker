@@ -1,1 +1,41 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>The Corporate Joker</title>
+        <link type="text/css" href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    </head>
+
+    <body>
+      <canvas class="orb_canvas"></canvas>
+      <nav class="navbar">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/team">Contact Us</a>
+      </nav>
+
+    <div class="overlay">
+        
+      <div class="overlay_inner">
+        
+        <h1 class="overlay_title">The <span class="text_gradient">Corporate</span> Joker</h1>
+        
+        <div class="main_container">
+          
+          <div class="btn-container">
+            <button class="overlay_btn" type="submit">Get a Joke!!</button>
+            <form action="/" method="post">
+                <input type="text" name="category" placeholder="Search by your humor XD">
+                <button class="overlay_btn" type="submit">Search</button>
+            </form>
+          </div>
+            <p class=output>This is sample output</p>
+
+        </div>
+      </div>  
+    </div>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+ </body>
+</html>
