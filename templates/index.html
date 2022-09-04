@@ -25,17 +25,21 @@
         <div class="main_container">
           
           <div class="btn-container">
-            <button class="overlay_btn" type="submit">Get a Joke!!</button>
+            <button class="overlay_btn" type="submit"><a href="/result">Get a Joke!!</button>
             <form action="/" method="post">
                 <input type="text" name="category" placeholder="Search by your humor XD">
                 <button class="overlay_btn" type="submit">Search</button>
             </form>
           </div>
-            <p class=output>This is sample output</p>
+          <p id='embed' class="output">{{embed}}</p>
 
         </div>
       </div>  
     </div>
-    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+    <script
+         src="{{ url_for('static', filename='js/app.js') }}"> 
+    </script>
  </body>
 </html>
+
+ 

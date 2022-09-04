@@ -1,5 +1,10 @@
 keras
 transformers
+#tensorflow
+pyjokes
+tqdm
+nltk
+matplotlib
 certifi==2019.11.28
 click==7.0
 Flask==1.1.1
